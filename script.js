@@ -10,7 +10,7 @@
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch (e) { return {}; }
   }
   function save(state) {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) { /* stockage indisponible */ }
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) { /* storage unavailable */ }
   }
 
   function render() {
@@ -23,7 +23,7 @@
       if (checked) done++;
     });
     fill.style.width = (done / steps.length * 100) + '%';
-    text.textContent = done + ' / ' + steps.length + ' étapes terminées' + (done === steps.length ? ' – bon jeu ! 🎉' : '');
+    text.textContent = done + ' / ' + steps.length + ' steps completed' + (done === steps.length ? ' – have fun! 🎉' : '');
   }
 
   var state = load();
@@ -46,7 +46,7 @@
     window.scrollTo({ top: 0 });
   });
 
-  // Copier dans le presse-papiers
+  // Copy to clipboard
   var toastTimer;
   function showToast(msg) {
     toast.textContent = msg;
@@ -62,7 +62,7 @@
       ta.style.opacity = '0';
       document.body.appendChild(ta);
       ta.select();
-      try { document.execCommand('copy'); } catch (e) { /* ignoré */ }
+      try { document.execCommand('copy'); } catch (e) { /* ignored */ }
       document.body.removeChild(ta);
     }
     if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -70,7 +70,7 @@
     } else {
       fallback();
     }
-    showToast('« ' + value + ' » copié !');
+    showToast('"' + value + '" copied!');
   }
   document.querySelectorAll('[data-copy], code.copy').forEach(function (el) {
     el.addEventListener('click', function () {
@@ -78,7 +78,7 @@
     });
   });
 
-  // Sommaire : surligner la section visible
+  // Table of contents: highlight the visible section
   if ('IntersectionObserver' in window) {
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {

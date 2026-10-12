@@ -1,14 +1,14 @@
-# Tuto SRMP
+# SRMP Guide
 
-Site statique (HTML/CSS/JS, sans dépendance) qui explique comment rejoindre le serveur Minecraft **play.srmp.fun** :
+A static website (HTML/CSS/JS, no dependencies) explaining how to join the Minecraft server **play.srmp.fun**:
 
-1. Installer CurseForge
-2. Créer un profil Minecraft **1.21.1 NeoForge**
-3. Ajouter le mod **AutoModpack**
-4. Régler la RAM
-5. Se connecter à `play.srmp.fun`, télécharger le modpack via AutoModpack et redémarrer
-6. Rejoindre le serveur, puis garder le modpack à jour
+1. Install CurseForge
+2. Create a Minecraft **1.21.1 NeoForge** profile
+3. Add the **AutoModpack** mod
+4. Set the RAM
+5. Connect to `play.srmp.fun`, download the modpack through AutoModpack and restart
+6. Join the server, then keep the modpack up to date
 
-## Voir le site
+## Viewing the site
 
-Ouvre `index.html` dans un navigateur, ou publie le dépôt avec GitHub Pages (Settings → Pages → branche, dossier `/`).
+Open `index.html` in a browser, or publish the repository with GitHub Pages (Settings → Pages → branch, folder `/`).

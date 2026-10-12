@@ -1,263 +1,263 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tuto SRMP – Rejoindre play.srmp.fun</title>
-  <meta name="description" content="Guide pas à pas : installer CurseForge, créer un modpack NeoForge 1.21.1, ajouter AutoModpack et rejoindre le serveur play.srmp.fun.">
+  <title>SRMP Guide – Join play.srmp.fun</title>
+  <meta name="description" content="Step-by-step guide: install CurseForge, create a NeoForge 1.21.1 modpack, add AutoModpack and join the play.srmp.fun server.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="hero">
     <div class="wrap">
       <p class="badge">Minecraft 1.21.1 · NeoForge · AutoModpack</p>
-      <h1>Rejoindre <span class="accent">play.srmp.fun</span></h1>
-      <p class="lead">Le guide complet : installer CurseForge, créer ton modpack, ajouter AutoModpack, puis te connecter au serveur. Ça prend environ 10 minutes.</p>
+      <h1>Join <span class="accent">play.srmp.fun</span></h1>
+      <p class="lead">The complete guide: install CurseForge, create your modpack, add AutoModpack, then connect to the server. It takes about 10 minutes.</p>
       <div class="progress" aria-live="polite">
         <div class="progress-bar"><span id="progress-fill"></span></div>
-        <p id="progress-text">0 / 7 étapes terminées</p>
+        <p id="progress-text">0 / 7 steps completed</p>
       </div>
     </div>
   </header>
 
   <div class="wrap layout">
-    <nav class="toc" aria-label="Sommaire">
-      <p class="toc-title">Sommaire</p>
+    <nav class="toc" aria-label="Table of contents">
+      <p class="toc-title">Contents</p>
       <ol>
-        <li><a href="#prerequis">Prérequis</a></li>
-        <li><a href="#etape-1">Installer CurseForge</a></li>
-        <li><a href="#etape-2">Créer le modpack</a></li>
-        <li><a href="#etape-3">Ajouter AutoModpack</a></li>
-        <li><a href="#etape-4">Régler la mémoire (RAM)</a></li>
-        <li><a href="#etape-5">Premier lancement</a></li>
-        <li><a href="#etape-6">Télécharger le modpack</a></li>
-        <li><a href="#etape-7">Rejoindre le serveur</a></li>
-        <li><a href="#mises-a-jour">Mises à jour</a></li>
-        <li><a href="#depannage">Dépannage</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#step-1">Install CurseForge</a></li>
+        <li><a href="#step-2">Create the modpack</a></li>
+        <li><a href="#step-3">Add AutoModpack</a></li>
+        <li><a href="#step-4">Set the memory (RAM)</a></li>
+        <li><a href="#step-5">First launch</a></li>
+        <li><a href="#step-6">Download the modpack</a></li>
+        <li><a href="#step-7">Join the server</a></li>
+        <li><a href="#updates">Updates</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
       </ol>
     </nav>
 
     <main>
-      <section id="prerequis" class="card">
-        <h2>Prérequis</h2>
+      <section id="requirements" class="card">
+        <h2>Requirements</h2>
         <ul class="checklist">
-          <li>Un compte <strong>Minecraft Java Edition</strong> (acheté sur minecraft.net). La version Bedrock ne fonctionne pas.</li>
-          <li>Un PC sous <strong>Windows</strong> ou <strong>macOS</strong>.</li>
-          <li>Au moins <strong>8 Go de RAM</strong> sur ton PC (16 Go conseillés).</li>
-          <li>Quelques Go d'espace disque libre pour les mods.</li>
+          <li>A <strong>Minecraft Java Edition</strong> account (bought on minecraft.net). Bedrock Edition will not work.</li>
+          <li>A <strong>Windows</strong> or <strong>macOS</strong> computer.</li>
+          <li>At least <strong>8 GB of RAM</strong> in your computer (16 GB recommended).</li>
+          <li>A few GB of free disk space for the mods.</li>
         </ul>
         <div class="note">
-          <strong>Comment ça marche ?</strong> Tu installes uniquement le mod <em>AutoModpack</em>. Quand tu te connectes à play.srmp.fun, le serveur t'envoie automatiquement tous les autres mods. Tu n'as rien d'autre à ajouter à la main.
+          <strong>How does it work?</strong> You only install the <em>AutoModpack</em> mod. When you connect to play.srmp.fun, the server automatically sends you all the other mods. You don't need to add anything else by hand.
         </div>
       </section>
 
-      <section id="etape-1" class="card step" data-step>
+      <section id="step-1" class="card step" data-step>
         <header class="step-head">
           <span class="step-num">1</span>
-          <h2>Installer CurseForge</h2>
+          <h2>Install CurseForge</h2>
         </header>
         <ol class="steps">
-          <li>Va sur <a href="https://www.curseforge.com/download/app" target="_blank" rel="noopener">curseforge.com/download/app</a> et télécharge l'application pour ton système.</li>
-          <li>Lance l'installateur et suis les instructions.</li>
-          <li>Ouvre CurseForge. Au premier lancement, choisis le jeu <strong>Minecraft</strong>.</li>
-          <li>CurseForge te demande où installer les fichiers de Minecraft. Garde le dossier par défaut, sauf si tu manques de place sur ton disque principal.</li>
-          <li>Connecte ton compte Microsoft/Minecraft si CurseForge te le propose (sinon, ce sera fait au premier lancement du jeu).</li>
+          <li>Go to <a href="https://www.curseforge.com/download/app" target="_blank" rel="noopener">curseforge.com/download/app</a> and download the app for your system.</li>
+          <li>Run the installer and follow the instructions.</li>
+          <li>Open CurseForge. On first launch, select the game <strong>Minecraft</strong>.</li>
+          <li>CurseForge asks where to install the Minecraft files. Keep the default folder unless your main drive is low on space.</li>
+          <li>Link your Microsoft/Minecraft account if CurseForge offers it (otherwise you'll do it when you first launch the game).</li>
         </ol>
         <div class="tip">
-          <strong>Astuce :</strong> sur Windows, si une fenêtre « Windows a protégé votre ordinateur » apparaît, clique sur <em>Informations complémentaires</em> puis <em>Exécuter quand même</em>. L'installateur officiel de CurseForge est sans danger.
+          <strong>Tip:</strong> on Windows, if a "Windows protected your PC" window appears, click <em>More info</em> then <em>Run anyway</em>. The official CurseForge installer is safe.
         </div>
-        <label class="done"><input type="checkbox"> J'ai installé CurseForge</label>
+        <label class="done"><input type="checkbox"> I installed CurseForge</label>
       </section>
 
-      <section id="etape-2" class="card step" data-step>
+      <section id="step-2" class="card step" data-step>
         <header class="step-head">
           <span class="step-num">2</span>
-          <h2>Créer un modpack NeoForge 1.21.1</h2>
+          <h2>Create a NeoForge 1.21.1 modpack</h2>
         </header>
         <ol class="steps">
-          <li>Dans CurseForge, clique sur <strong>Minecraft</strong> dans la barre de gauche, puis sur l'onglet <strong>My Modpacks</strong>.</li>
-          <li>Clique sur <strong>+ Create Custom Profile</strong> en haut à droite.</li>
-          <li>Remplis le formulaire :
+          <li>In CurseForge, click <strong>Minecraft</strong> in the left sidebar, then the <strong>My Modpacks</strong> tab.</li>
+          <li>Click <strong>+ Create Custom Profile</strong> in the top right.</li>
+          <li>Fill in the form:
             <table class="settings">
-              <tr><th>Profile Name</th><td><code>SRMP</code> (ou le nom de ton choix)</td></tr>
+              <tr><th>Profile Name</th><td><code>SRMP</code> (or any name you like)</td></tr>
               <tr><th>Game Version</th><td><code>1.21.1</code></td></tr>
               <tr><th>Modloader</th><td><code>NeoForge</code></td></tr>
-              <tr><th>Version du loader</th><td>la plus récente proposée (<em>Recommended</em> / <em>Latest</em>)</td></tr>
+              <tr><th>Loader version</th><td>the newest one offered (<em>Recommended</em> / <em>Latest</em>)</td></tr>
             </table>
           </li>
-          <li>Clique sur <strong>Create</strong>. CurseForge télécharge Minecraft et NeoForge : patiente jusqu'à la fin.</li>
+          <li>Click <strong>Create</strong>. CurseForge downloads Minecraft and NeoForge: wait until it's finished.</li>
         </ol>
         <div class="warn">
-          <strong>Attention :</strong> la version doit être exactement <code>1.21.1</code> avec <code>NeoForge</code>. Avec <em>1.21</em>, <em>1.21.4</em>, <em>Forge</em> ou <em>Fabric</em>, tu ne pourras pas te connecter.
+          <strong>Warning:</strong> the version must be exactly <code>1.21.1</code> with <code>NeoForge</code>. With <em>1.21</em>, <em>1.21.4</em>, <em>Forge</em> or <em>Fabric</em>, you won't be able to connect.
         </div>
-        <label class="done"><input type="checkbox"> Mon profil NeoForge 1.21.1 est créé</label>
+        <label class="done"><input type="checkbox"> My NeoForge 1.21.1 profile is created</label>
       </section>
 
-      <section id="etape-3" class="card step" data-step>
+      <section id="step-3" class="card step" data-step>
         <header class="step-head">
           <span class="step-num">3</span>
-          <h2>Ajouter le mod AutoModpack</h2>
+          <h2>Add the AutoModpack mod</h2>
         </header>
-        <h3>Méthode A : depuis CurseForge (recommandée)</h3>
+        <h3>Method A: from CurseForge (recommended)</h3>
         <ol class="steps">
-          <li>Ouvre ton profil <strong>SRMP</strong> en cliquant dessus.</li>
-          <li>Clique sur <strong>Add More Content</strong> (ou <strong>Browse</strong>).</li>
-          <li>Dans la barre de recherche, tape <code class="copy" title="Cliquer pour copier">AutoModpack</code>.</li>
-          <li>Vérifie que c'est bien le mod <strong>AutoModpack</strong> de <em>Skidam</em>, puis clique sur <strong>Install</strong>.</li>
-          <li>Reviens à ton profil : AutoModpack doit apparaître dans la liste des mods installés.</li>
+          <li>Open your <strong>SRMP</strong> profile by clicking on it.</li>
+          <li>Click <strong>Add More Content</strong> (or <strong>Browse</strong>).</li>
+          <li>In the search bar, type <code class="copy" title="Click to copy">AutoModpack</code>.</li>
+          <li>Make sure it's the <strong>AutoModpack</strong> mod by <em>Skidam</em>, then click <strong>Install</strong>.</li>
+          <li>Go back to your profile: AutoModpack should appear in the list of installed mods.</li>
         </ol>
 
-        <h3>Méthode B : installation manuelle</h3>
+        <h3>Method B: manual install</h3>
         <ol class="steps">
-          <li>Télécharge le fichier <code>.jar</code> d'AutoModpack pour <strong>NeoForge 1.21.1</strong> depuis
-            <a href="https://modrinth.com/mod/automodpack" target="_blank" rel="noopener">Modrinth</a> ou
+          <li>Download the AutoModpack <code>.jar</code> file for <strong>NeoForge 1.21.1</strong> from
+            <a href="https://modrinth.com/mod/automodpack" target="_blank" rel="noopener">Modrinth</a> or
             <a href="https://www.curseforge.com/minecraft/mc-mods/automodpack" target="_blank" rel="noopener">CurseForge</a>.</li>
-          <li>Dans CurseForge, sur ton profil, clique sur les <strong>trois points ⋮</strong> puis <strong>Open Folder</strong>.</li>
-          <li>Ouvre le dossier <code>mods</code> (crée-le s'il n'existe pas) et dépose-y le fichier <code>.jar</code>.</li>
+          <li>In CurseForge, on your profile, click the <strong>three dots ⋮</strong> then <strong>Open Folder</strong>.</li>
+          <li>Open the <code>mods</code> folder (create it if it doesn't exist) and drop the <code>.jar</code> file into it.</li>
         </ol>
         <div class="note">
-          <strong>Important :</strong> n'ajoute <em>aucun autre mod</em>. AutoModpack s'occupe de tout installer à ta place depuis le serveur.
+          <strong>Important:</strong> don't add <em>any other mods</em>. AutoModpack installs everything for you from the server.
         </div>
-        <label class="done"><input type="checkbox"> AutoModpack est installé dans mon profil</label>
+        <label class="done"><input type="checkbox"> AutoModpack is installed in my profile</label>
       </section>
 
-      <section id="etape-4" class="card step" data-step>
+      <section id="step-4" class="card step" data-step>
         <header class="step-head">
           <span class="step-num">4</span>
-          <h2>Régler la mémoire (RAM)</h2>
+          <h2>Set the memory (RAM)</h2>
         </header>
-        <p>Un modpack a besoin de plus de mémoire que Minecraft classique. Sans ça, le jeu peut planter ou ramer.</p>
+        <p>A modpack needs more memory than vanilla Minecraft. Without it, the game may crash or lag.</p>
         <ol class="steps">
-          <li>Dans CurseForge, clique sur l'icône <strong>⚙ Settings</strong> (en bas à gauche).</li>
-          <li>Va dans <strong>Game Specific → Minecraft</strong>.</li>
-          <li>Dans <strong>Java Settings</strong>, règle <strong>Allocated Memory</strong> :
+          <li>In CurseForge, click the <strong>⚙ Settings</strong> icon (bottom left).</li>
+          <li>Go to <strong>Game Specific → Minecraft</strong>.</li>
+          <li>Under <strong>Java Settings</strong>, set <strong>Allocated Memory</strong>:
             <table class="settings">
-              <tr><th>PC avec 8 Go</th><td>4 à 5 Go</td></tr>
-              <tr><th>PC avec 16 Go</th><td>6 à 8 Go</td></tr>
-              <tr><th>PC avec 32 Go ou +</th><td>8 à 10 Go</td></tr>
+              <tr><th>PC with 8 GB</th><td>4 to 5 GB</td></tr>
+              <tr><th>PC with 16 GB</th><td>6 to 8 GB</td></tr>
+              <tr><th>PC with 32 GB or more</th><td>8 to 10 GB</td></tr>
             </table>
           </li>
         </ol>
         <div class="tip">
-          <strong>Astuce :</strong> ne donne jamais plus de la moitié de la RAM de ton PC. Allouer trop de mémoire ralentit le jeu au lieu de l'accélérer.
+          <strong>Tip:</strong> never allocate more than half of your computer's RAM. Allocating too much memory slows the game down instead of speeding it up.
         </div>
-        <label class="done"><input type="checkbox"> J'ai réglé la RAM</label>
+        <label class="done"><input type="checkbox"> I set the RAM</label>
       </section>
 
-      <section id="etape-5" class="card step" data-step>
+      <section id="step-5" class="card step" data-step>
         <header class="step-head">
           <span class="step-num">5</span>
-          <h2>Premier lancement du jeu</h2>
+          <h2>First game launch</h2>
         </header>
         <ol class="steps">
-          <li>Sur ton profil <strong>SRMP</strong>, clique sur le gros bouton <strong>Play</strong>.</li>
-          <li>Le launcher Minecraft s'ouvre. Connecte-toi avec ton compte Microsoft si on te le demande, puis clique sur <strong>Jouer</strong>.</li>
-          <li>Le premier démarrage peut prendre une ou deux minutes. Attends d'arriver sur le menu principal de Minecraft.</li>
+          <li>On your <strong>SRMP</strong> profile, click the big <strong>Play</strong> button.</li>
+          <li>The Minecraft Launcher opens. Sign in with your Microsoft account if asked, then click <strong>Play</strong>.</li>
+          <li>The first start can take a minute or two. Wait until you reach the Minecraft main menu.</li>
         </ol>
-        <label class="done"><input type="checkbox"> Le jeu est lancé et je suis sur le menu principal</label>
+        <label class="done"><input type="checkbox"> The game is running and I'm on the main menu</label>
       </section>
 
-      <section id="etape-6" class="card step" data-step>
+      <section id="step-6" class="card step" data-step>
         <header class="step-head">
           <span class="step-num">6</span>
-          <h2>Se connecter à play.srmp.fun et télécharger le modpack</h2>
+          <h2>Connect to play.srmp.fun and download the modpack</h2>
         </header>
         <ol class="steps">
-          <li>Dans le menu principal, clique sur <strong>Multijoueur</strong>.</li>
-          <li>Clique sur <strong>Ajouter un serveur</strong>.</li>
-          <li>Remplis :
+          <li>From the main menu, click <strong>Multiplayer</strong>.</li>
+          <li>Click <strong>Add Server</strong>.</li>
+          <li>Fill in:
             <table class="settings">
-              <tr><th>Nom du serveur</th><td><code>SRMP</code></td></tr>
-              <tr><th>Adresse du serveur</th><td><button class="copy-btn" data-copy="play.srmp.fun"><code>play.srmp.fun</code> <span>Copier</span></button></td></tr>
+              <tr><th>Server Name</th><td><code>SRMP</code></td></tr>
+              <tr><th>Server Address</th><td><button class="copy-btn" data-copy="play.srmp.fun"><code>play.srmp.fun</code> <span>Copy</span></button></td></tr>
             </table>
           </li>
-          <li>Clique sur <strong>Terminé</strong>, sélectionne le serveur puis clique sur <strong>Rejoindre le serveur</strong>.</li>
-          <li><strong>Vérification du serveur :</strong> AutoModpack affiche l'empreinte (<em>fingerprint</em>) du serveur. C'est normal, ce n'est pas un bug. Si le staff SRMP t'a donné l'empreinte (sur Discord par exemple), compare-la ou colle-la dans le champ, puis valide.</li>
-          <li>AutoModpack te propose d'installer le modpack du serveur : <strong>accepte</strong>.</li>
-          <li>Le téléchargement des mods démarre. Laisse-le se terminer sans fermer le jeu : selon ta connexion, ça peut prendre quelques minutes.</li>
-          <li>Une fois terminé, AutoModpack te demande de <strong>redémarrer le jeu</strong>. Accepte ou ferme Minecraft.</li>
+          <li>Click <strong>Done</strong>, select the server, then click <strong>Join Server</strong>.</li>
+          <li><strong>Server verification:</strong> AutoModpack shows the server's <em>fingerprint</em>. This is normal, not a bug. If the SRMP staff gave you the fingerprint (on Discord, for example), compare it or paste it into the field, then confirm.</li>
+          <li>AutoModpack offers to install the server's modpack: <strong>accept</strong>.</li>
+          <li>The mods start downloading. Let it finish without closing the game: depending on your connection, it can take a few minutes.</li>
+          <li>When it's done, AutoModpack asks you to <strong>restart the game</strong>. Accept, or close Minecraft.</li>
         </ol>
         <div class="warn">
-          <strong>Ne coupe pas le téléchargement en cours de route.</strong> Si ça arrive, relance simplement le jeu et reconnecte-toi au serveur : AutoModpack reprendra là où il s'était arrêté.
+          <strong>Don't interrupt the download.</strong> If it does get interrupted, just restart the game and reconnect to the server: AutoModpack will pick up where it left off.
         </div>
-        <label class="done"><input type="checkbox"> Le modpack est téléchargé et j'ai fermé le jeu</label>
+        <label class="done"><input type="checkbox"> The modpack is downloaded and I closed the game</label>
       </section>
 
-      <section id="etape-7" class="card step" data-step>
+      <section id="step-7" class="card step" data-step>
         <header class="step-head">
           <span class="step-num">7</span>
-          <h2>Rejoindre le serveur</h2>
+          <h2>Join the server</h2>
         </header>
         <ol class="steps">
-          <li>Si le jeu ne s'est pas relancé tout seul, retourne dans CurseForge et clique à nouveau sur <strong>Play</strong> sur ton profil <strong>SRMP</strong>.</li>
-          <li>Ce lancement est plus long que d'habitude : NeoForge charge maintenant tous les mods du serveur.</li>
-          <li>Va dans <strong>Multijoueur</strong>, sélectionne <strong>SRMP</strong> et clique sur <strong>Rejoindre le serveur</strong>.</li>
-          <li>Tu es connecté. Bon jeu sur <strong>play.srmp.fun</strong> ! 🎉</li>
+          <li>If the game didn't restart on its own, go back to CurseForge and click <strong>Play</strong> on your <strong>SRMP</strong> profile again.</li>
+          <li>This launch takes longer than usual: NeoForge is now loading all of the server's mods.</li>
+          <li>Go to <strong>Multiplayer</strong>, select <strong>SRMP</strong> and click <strong>Join Server</strong>.</li>
+          <li>You're in. Have fun on <strong>play.srmp.fun</strong>! 🎉</li>
         </ol>
-        <label class="done"><input type="checkbox"> Je suis connecté au serveur !</label>
+        <label class="done"><input type="checkbox"> I'm connected to the server!</label>
       </section>
 
-      <section id="mises-a-jour" class="card">
-        <h2>🔄 Mettre à jour le modpack</h2>
-        <p>Avec AutoModpack, tu n'as presque rien à faire : les mises à jour sont automatiques.</p>
+      <section id="updates" class="card">
+        <h2>🔄 Updating the modpack</h2>
+        <p>With AutoModpack, there's almost nothing to do: updates are automatic.</p>
         <ul class="checklist">
-          <li><strong>Au lancement du jeu :</strong> AutoModpack vérifie si le modpack du serveur a changé. Si c'est le cas, il télécharge les nouveaux fichiers tout seul.</li>
-          <li><strong>Si une mise à jour arrive pendant que tu joues :</strong> à ta prochaine connexion, AutoModpack télécharge les changements et te demande de redémarrer. Ferme le jeu puis relance-le depuis CurseForge.</li>
-          <li><strong>Si le serveur te refuse (mods différents) :</strong> ferme complètement Minecraft, relance-le depuis CurseForge puis reconnecte-toi. La mise à jour se fera à ce moment-là.</li>
+          <li><strong>When the game starts:</strong> AutoModpack checks whether the server's modpack has changed. If it has, it downloads the new files on its own.</li>
+          <li><strong>If an update comes out while you're playing:</strong> the next time you connect, AutoModpack downloads the changes and asks you to restart. Close the game, then launch it again from CurseForge.</li>
+          <li><strong>If the server rejects you (mismatched mods):</strong> fully close Minecraft, launch it again from CurseForge and reconnect. The update will happen then.</li>
         </ul>
         <div class="note">
-          <strong>Ne mets pas à jour les mods toi-même</strong> dans CurseForge (bouton <em>Update</em>). Les versions doivent être celles du serveur, et AutoModpack s'en occupe.
-          Seule exception : si le staff annonce une nouvelle version d'AutoModpack, mets-le à jour depuis ton profil CurseForge.
+          <strong>Don't update the mods yourself</strong> in CurseForge (the <em>Update</em> button). The versions must match the server's, and AutoModpack takes care of that.
+          The only exception: if the staff announces a new version of AutoModpack, update it from your CurseForge profile.
         </div>
       </section>
 
-      <section id="depannage" class="card">
-        <h2>🛠 Dépannage</h2>
+      <section id="troubleshooting" class="card">
+        <h2>🛠 Troubleshooting</h2>
         <details>
-          <summary>« Incompatible client » ou « Mismatched mod list » quand je me connecte</summary>
-          <p>Ton modpack n'est pas à jour. Ferme complètement le jeu, relance-le depuis CurseForge et reconnecte-toi pour que AutoModpack télécharge les changements. Vérifie aussi que ton profil est bien en <code>1.21.1</code> + <code>NeoForge</code>.</p>
+          <summary>"Incompatible client" or "Mismatched mod list" when I connect</summary>
+          <p>Your modpack is out of date. Fully close the game, launch it again from CurseForge and reconnect so AutoModpack can download the changes. Also check that your profile is set to <code>1.21.1</code> + <code>NeoForge</code>.</p>
         </details>
         <details>
-          <summary>AutoModpack ne propose rien quand je rejoins le serveur</summary>
-          <p>Vérifie que le fichier AutoModpack est bien dans le dossier <code>mods</code> de ton profil <strong>SRMP</strong> (pas dans un autre profil), et qu'il s'agit de la version <strong>NeoForge 1.21.1</strong>.</p>
+          <summary>AutoModpack doesn't offer anything when I join the server</summary>
+          <p>Check that the AutoModpack file is in the <code>mods</code> folder of your <strong>SRMP</strong> profile (not another profile), and that it's the <strong>NeoForge 1.21.1</strong> version.</p>
         </details>
         <details>
-          <summary>Erreur de certificat ou d'empreinte (« fingerprint mismatch »)</summary>
-          <p>L'empreinte affichée ne correspond pas à celle attendue. Vérifie l'adresse (<code>play.srmp.fun</code>), puis contacte le staff sur Discord avant d'aller plus loin. Ne force pas la connexion.</p>
+          <summary>Certificate or fingerprint error ("fingerprint mismatch")</summary>
+          <p>The fingerprint shown doesn't match the expected one. Double-check the address (<code>play.srmp.fun</code>), then contact the staff on Discord before going any further. Don't force the connection.</p>
         </details>
         <details>
-          <summary>Le jeu plante au démarrage ou rame énormément</summary>
-          <p>Augmente la RAM allouée (voir <a href="#etape-4">étape 4</a>) et mets à jour les pilotes de ta carte graphique. Si ça plante toujours, envoie le fichier <code>logs/latest.log</code> (dossier du profil → <em>Open Folder</em>) au staff.</p>
+          <summary>The game crashes on startup or lags a lot</summary>
+          <p>Increase the allocated RAM (see <a href="#step-4">step 4</a>) and update your graphics card drivers. If it still crashes, send the <code>logs/latest.log</code> file (profile folder → <em>Open Folder</em>) to the staff.</p>
         </details>
         <details>
-          <summary>Je veux repartir de zéro</summary>
-          <p>Dans le dossier du profil (<em>⋮ → Open Folder</em>), supprime le dossier <code>automodpack</code>, puis relance le jeu et reconnecte-toi au serveur : tout sera retéléchargé. Tu peux aussi supprimer le profil dans CurseForge et reprendre ce guide à l'<a href="#etape-2">étape 2</a>.</p>
+          <summary>I want to start over from scratch</summary>
+          <p>In the profile folder (<em>⋮ → Open Folder</em>), delete the <code>automodpack</code> folder, then launch the game and reconnect to the server: everything will be downloaded again. You can also delete the profile in CurseForge and restart this guide from <a href="#step-2">step 2</a>.</p>
         </details>
         <details>
-          <summary>Je peux ajouter mes propres mods (minimap, shaders…) ?</summary>
-          <p>Seulement les mods « côté client » que le staff autorise. Demande sur le Discord avant d'en ajouter un : un mod non compatible peut empêcher la connexion.</p>
+          <summary>Can I add my own mods (minimap, shaders…)?</summary>
+          <p>Only client-side mods that the staff allows. Ask on Discord before adding one: an incompatible mod can prevent you from connecting.</p>
         </details>
       </section>
 
       <section class="card recap">
-        <h2>Résumé rapide</h2>
+        <h2>Quick summary</h2>
         <ol>
-          <li>Installer <strong>CurseForge</strong></li>
-          <li>Créer un profil <strong>1.21.1 · NeoForge</strong></li>
-          <li>Ajouter <strong>AutoModpack</strong> (et rien d'autre)</li>
-          <li>Lancer le jeu → Multijoueur → <code>play.srmp.fun</code></li>
-          <li>Accepter le téléchargement → redémarrer</li>
-          <li>Se reconnecter et jouer 🎮</li>
+          <li>Install <strong>CurseForge</strong></li>
+          <li>Create a <strong>1.21.1 · NeoForge</strong> profile</li>
+          <li>Add <strong>AutoModpack</strong> (and nothing else)</li>
+          <li>Launch the game → Multiplayer → <code>play.srmp.fun</code></li>
+          <li>Accept the download → restart</li>
+          <li>Reconnect and play 🎮</li>
         </ol>
-        <button class="reset" id="reset">Réinitialiser ma progression</button>
+        <button class="reset" id="reset">Reset my progress</button>
       </section>
     </main>
   </div>
 
   <footer class="footer">
     <div class="wrap">
-      <p>Tuto SRMP · Serveur <strong>play.srmp.fun</strong> · Minecraft 1.21.1 NeoForge</p>
-      <p class="muted">Site non officiel de Mojang/Microsoft. Minecraft est une marque de Mojang AB.</p>
+      <p>SRMP Guide · Server <strong>play.srmp.fun</strong> · Minecraft 1.21.1 NeoForge</p>
+      <p class="muted">Not an official Mojang/Microsoft website. Minecraft is a trademark of Mojang AB.</p>
     </div>
   </footer>
 
